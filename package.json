@@ -1,0 +1,19 @@
+{
+  "name": "oregontrail.js",
+  "version": "1.0.0",
+  "description": "Project 1",
+  "main": "oregonTrail.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateozap97/mzapata-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateozap97/mzapata-project/issues"
+  },
+  "homepage": "https://github.com/mateozap97/mzapata-project#readme"
+}
