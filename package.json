@@ -1,10 +1,10 @@
 {
-  "name": "oregontrail.js",
+  "name": "mzapata-project",
   "version": "1.0.0",
   "description": "Project 1",
   "main": "oregonTrail.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mateozap97/mzapata-project/issues"
   },
-  "homepage": "https://github.com/mateozap97/mzapata-project#readme"
+  "homepage": "https://github.com/mateozap97/mzapata-project#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
