@@ -53,16 +53,66 @@
 		</body>
 			<div id = "container">
 				<h1>The Oregon Trail</h1>
-				<p>Main Menu</p>
 			</div>
 			
 			<div id ="top">
 				<div class="table">
-    				<ol id="horizontal-list" type="I">
-     					<li>Travel the trail</li>
-     					<li>Learn about the trail</li>
-      					<li>See the Oregon top 10</li>
-      					<li>Turn sound (Off/On)</li>
+    				<ol id="horizontal-list">
+						<li><button onclick="myFunction()">Travel the Trail</button></li>
+							<p id="demo"></p>
+
+						<script>
+						function myFunction() {
+ 							var str = "Travel The Trail";
+  							var result = str.link("file:///Users/mateozapata/Desktop/Project/mzapata-project/client/views/trail.html");
+  							document.getElementById("demo").innerHTML = result;
+						}
+						</script>
+     					
+						<li><button onclick="myLearnTrail()">Learn about the trail</button></li>
+							<p id="try"></p>
+
+						<script>
+						function myLearnTrail() {
+ 							var str = "Learn about Trail";
+  							var result = str.link("https://www.w3schools.com");
+  							document.getElementById("try").innerHTML = result;
+						}
+						</script>
+						
+						<li><button onclick="myTopTen()">See the Top 10</button></li>
+							<p id="demoTwo"></p>
+
+						<script>
+						function myTopTen() {
+ 							var str = "Top 10!";
+  							var result = str.link("file:///Users/mateozapata/Desktop/Project/mzapata-project/client/views/topten.html");
+  							document.getElementById("demoTwo").innerHTML = result;
+						}
+						</script>
+						
+						<li><audio id="myAudio">
+  							<source src="horse.ogg" type="audio/ogg">
+  							<source src="horse.mp3" type="audio/mpeg">
+						</audio>
+
+						<p>Turn sound (On/Off)</p>
+
+						<button onclick="playAudio()" type="button">On</button>
+						<button onclick="pauseAudio()" type="button">Off</button> 
+
+						<script>
+							var x = document.getElementById("myAudio"); 
+
+						function playAudio() { 
+  							x.play(); 
+						} 
+
+						function pauseAudio() { 
+  							x.pause(); 
+						} 
+						</script></li>
+						
     				</ol>
   				</div>
 			</div>
